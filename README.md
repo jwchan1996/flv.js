@@ -1,6 +1,14 @@
 ## Modify
 /src/io/fetch-stream-loader.js: 添加AbortController用来终止fecth请求
 
+## 环境说明
+当前全局安装 gulp 使用的版本应该与版本库一致   
+
+node 版本需要降低到 10 以下才行，但太低对我们的其他项目又有影响。
+
+如 node 10.x 版本，需要安装 npm install --save-dev natives 才能在不修改 gulpfile 文件下打包出 flv.min.js  
+
+安装依赖使用 npm ci，会按照 lock 文件安装依赖，但注意 ci 命令是 npm 版本 5.7 及以上才添加的
 
 
 flv.js  [![npm](https://img.shields.io/npm/v/flv.js.svg?style=flat)](https://www.npmjs.com/package/flv.js)
